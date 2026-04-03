@@ -1,0 +1,9 @@
+[project]
+name = "data-loader"
+version = "0.1.0"
+description = "Data Loaders for the project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "yfinance>=1.2.0",
+]
