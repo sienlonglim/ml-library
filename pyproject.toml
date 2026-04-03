@@ -3,5 +3,21 @@ name = "ml-library"
 version = "0.1.0"
 description = "Repository to contain ML implementations"
 readme = "README.md"
-requires-python = ">=3.15"
-dependencies = []
+requires-python = ">=3.11"
+dependencies = [
+    "data_loader",
+    "dtaidistance>=2.4.0",
+    "ipykernel>=7.2.0",
+    "kmedoids>=0.5.4",
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.2",
+    "plotly>=6.6.0",
+    "pmdarima>=2.1.1",
+    "pydantic>=2.12.5",
+    "scipy>=1.17.1",
+    "statsmodels>=0.14.6",
+    "tslearn>=0.8.1",
+]
+
+[tool.uv.sources]
+data_loader = { path = "./data-loader", editable = false }
